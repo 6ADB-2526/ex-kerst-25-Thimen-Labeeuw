@@ -21,8 +21,12 @@ def add(req):
     newUser.role = post_data["role"]
     newUser.isSuperuser = post_data["isSuperuser"]
     newUser.save()
+    # geef als return de nieuw gemaakte user aan. 
     return HttpResponse("add")
 
+
+# verder ben je jammer genoeg niet geraakt. 
+# delete / update / pass-check
 def delete(req, ID):
 
     return HttpResponse("delete")

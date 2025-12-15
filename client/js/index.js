@@ -26,6 +26,10 @@ submitBtn.addEventListener("click",() => {
     fetch("https://ex-kerst-2025.onrender.com/user", options)
     .then(result => result.json())
     .then(userID => {
+        // Krijg je hier een userID terug? 
+        // de voorgaande fecht leverd je een resultaat op, op basis van login en paswoord.
+        // Waarom ga je dan hieronder nog eens controlleren op login en password? 
+
         fetch("https://ex-kerst-2025.onrender.com/user")
         .then(result => result.json())
         .then(allUsers => {
